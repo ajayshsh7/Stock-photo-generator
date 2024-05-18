@@ -1,4 +1,4 @@
-const auth = ""; //ADD THE AUTH KEY
+const auth = "7MNJiUIciHMjQhpkxZgNqqS4jWLdfYDxd6SzN3wv2aTHKaf9mvxZmsJ5"; //ADD THE AUTH KEY
 const gallery = document.querySelector(".gallery");
 const searchInput = document.querySelector(".search-input");
 const form = document.querySelector(".search-form");
@@ -49,7 +49,7 @@ function generatePictures(data) {
 }
 
 async function curatedPhotos() {
-  fetchLink = "https://api.pexels.com/v1/curated?per_page=15&page=1";
+  fetchLink = "https://api.pexels.com/v1/curated?";
   const data = await fetchApi(fetchLink);
 
   generatePictures(data);
@@ -57,7 +57,7 @@ async function curatedPhotos() {
 
 async function searchPhotos(query) {
   clear();
-  fetchLink = `https://api.pexels.com/v1/search?query=${query}+query&per_page=15&page=1`;
+  fetchLink = `https://api.pexels.com/v1/search?query=${query}`;
   const data = await fetchApi(fetchLink);
   generatePictures(data);
 }
