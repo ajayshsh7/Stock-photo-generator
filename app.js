@@ -38,12 +38,11 @@ function generatePictures(data) {
     const galleryImg = document.createElement("div");
     galleryImg.classList.add("gallery-img");
     galleryImg.innerHTML = `
-            <div class="gallery-info">
-            <p>${photo.photographer}</p>
-            <a href=${photo.src.original}>Download</a>
-            </div>
-            <img src=${photo.src.large}></img>
-            `;
+  <div class="gallery-info">
+    <p>${photo.photographer}</p>
+    <a href="${photo.url}" target="_blank" rel="noopener noreferrer">Download</a>
+  </div>
+  <img src="${photo.src.large}"></img>`;
     gallery.appendChild(galleryImg);
   });
 }
