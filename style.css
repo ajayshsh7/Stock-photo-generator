@@ -22,7 +22,7 @@ header h2 {
   color: black;
 }
 .search-form {
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
 }
 .search-form input {
