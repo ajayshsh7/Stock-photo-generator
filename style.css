@@ -15,7 +15,7 @@ header {
   align-items: center;
 }
 header h2 {
-  padding: 2rem;
+  padding: 1rem;
 }
 #logo {
   text-decoration: none;
@@ -54,12 +54,11 @@ header h2 {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  padding: 2rem 0rem;
-  width: 80%;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   margin: auto;
   row-gap: 5rem;
   column-gap: 3rem;
+  padding-inline: .5rem;
 }
 
 .gallery-img img {
