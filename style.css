@@ -9,15 +9,16 @@ body {
   margin-inline: auto;
 }
 .heroContent{
-  padding-block: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
   text-align: center;
 }
 h1{
   font-family: 'Clash Display', sans-serif;
-  font-size: 10rem;
+  font-size: 8rem;
 }
 .carousel {
-      width: 90%;
+      width: 95%;
       aspect-ratio: 2 / .85;
       overflow: hidden;
       border: 5px solid #fff;
@@ -91,7 +92,7 @@ header h2 {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   margin: auto;
   row-gap: 5rem;
   column-gap: 2rem;
