@@ -5,34 +5,38 @@
 }
 body {
   font-family: "Roboto", sans-serif;
+  max-width: 1350px;
+  margin-inline: auto;
+}
+.heroContent{
+  padding-block: 2rem;
+  text-align: center;
+}
+h1{
+  font-family: 'Clash Display', sans-serif;
+  font-size: 10rem;
 }
 .carousel {
-      max-width: 1350px; 
-      aspect-ratio: 2 / .85; 
+      width: 90%;
+      aspect-ratio: 2 / .85;
       overflow: hidden;
-      border-radius: 50px;
+      border: 5px solid #fff;
+      border-radius: 10px;
       position: relative;
     }
 
     .carousel-track {
       display: flex;
-      width: 300%; /* 100% * number of images */
+      width: 100%;
       height: 100%;
-      animation: slide 19s infinite steps(3);
+      transition: transform 0.5s ease-in-out;
     }
 
     .carousel img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      flex: 1 0 100%; /* Each image takes 100% of the carousel width */
-    }
-
-    @keyframes slide {
-      0% { transform: translateX(0); }
-      33.333% { transform: translateX(-100%); }
-      66.666% { transform: translateX(-200%); }
-      100% { transform: translateX(0); }
+      flex: 0 0 100%;
     }
 header {
   display: flex;
@@ -42,11 +46,17 @@ header {
   align-items: center;
 }
 header h2 {
-  padding: 1rem;
+  padding-top: 4rem;
 }
 #logo {
   text-decoration: none;
   color: black;
+  margin-inline: auto;
+  text-align: center;
+}
+#logo a{
+  text-align: center;
+
 }
 .search-form {
   padding: 1rem;
@@ -108,4 +118,10 @@ header h2 {
   border: none;
   font-size: 1.2rem;
   cursor: pointer;
+}
+@media (max-width: 600px) {
+  .carousel {
+    width: 100%;
+    aspect-ratio: 4 / 3; /* Or even 1 / 1 for square on mobile */
+  }
 }
